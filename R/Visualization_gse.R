@@ -37,7 +37,7 @@ GSEAbar <- function(res, top = 10) {
 
   p <- ggplot(dat,
          aes(NES, fct_reorder(stringr::str_wrap(Description,25), NES),
-             fill=qvalues)) +
+             fill=qvalue)) +
     geom_col() +
     scale_fill_gradientn(colours=c("#b3eebe",
                                    "#46bac2", "#371ea3"),
